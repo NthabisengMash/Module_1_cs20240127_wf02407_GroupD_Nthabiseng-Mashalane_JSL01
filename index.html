@@ -10,8 +10,15 @@
     <h3>Note to all SPCA volunteers 📝</h3>
     <p>All pet adoption codes start with "pet_" and then the pet's birth year and name.</p>
     <p><strong>Example:</strong> pet_2015Forrest</p>
-    <input type="text" id="petInput" placeholder="Enter pet adoption detail">
-    <button onclick="validateSyntax()">Validate</button>
-    <p id="result"></p>
+   
+    <div>
+        <input type="text" id="petInput" placeholder="Enter pet adoption detail">
+        <button onclick="validateSyntax()" id="validateButton">Validate</button>
+    </div>  
+    
+    <div id="resultContainer"> 
+        <p id="result"></p>
+        <button id="circle-Btn"></button>
+    </div> 
 </body>
 </html>
