@@ -21,9 +21,17 @@ function validateSyntax() {
         document.getElementById('result').innerText = result; 
     }
 
-    
-    
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(res => {
+        return res.json()
+    })
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => console.log(error))
 
+    
+    
 
     
 
